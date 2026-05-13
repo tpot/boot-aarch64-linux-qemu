@@ -153,7 +153,7 @@ debug:
 
 clean: fs.clean linux.clean tf-a.clean u-boot.clean buildroot.clean qemu.clean 
 
-distclean:
+distclean: clean
 	rm -rf $(GRUB_BUSYBOX_IMG)
 	rm -rf $(SRC_DIR) $(TOOLS_DIR)
 
